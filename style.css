@@ -131,6 +131,10 @@ nav {
     .burger {
         display: flex;
     }
+
+    .menu {
+        margin-left: auto; 
+    }
 }
 
 section {
