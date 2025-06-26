@@ -15,11 +15,13 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    position: relative;
 }
 
 header.shrink {
     padding: 5px 20px;
+}
+header.shrink .logo {
+    height: 45px;
 }
 
 .logo {
