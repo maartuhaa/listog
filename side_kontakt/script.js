@@ -1,6 +1,6 @@
 
 function toggleMenu() {
-    document.getElementById("menu").classList.toggle("active");
+    document.getElementById("nav-links").classList.toggle("active");
 }
 
 const header = document.getElementById('header');
@@ -11,6 +11,7 @@ window.addEventListener('scroll', () => {
         header.classList.remove('shrink');
     }
 });
+
 
 
 
