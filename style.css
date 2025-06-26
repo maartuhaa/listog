@@ -15,16 +15,15 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    position: relative;
 }
 
 header.shrink {
     padding: 5px 20px;
 }
-
 header.shrink .logo {
     height: 45px;
 }
-
 .logo {
     height: 70px;
     transition: all 0.3s ease;
@@ -83,9 +82,6 @@ nav {
         padding: 10px;
         border-radius: 10px;
         z-index: 999;
-        position: sticky;
-        /* обов’язково зберігаємо sticky */
-        top: 0;
     }
 
     .nav-links.active {
