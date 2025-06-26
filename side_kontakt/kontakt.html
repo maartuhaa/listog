@@ -11,66 +11,64 @@
 
 <body>
 
-    <body>
-        <header id="header">
-            <img src="../image/logo/logo_white.png" alt="" class="logo">
-            <div class="company-name">Listog Entreprenør AS</div>
-            <div class="menu">
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="../index.html">Om oss</a></li>
-                    <li><a href="../index.html">Tjenester</a></li>
-                    <li><a href="../index.html">Samarbeidspartnere</a></li>
-                    <li><a href="../gallery/gallery.html">Våre prosjekter</a></li>
-                    <li><a href="../side_kontakt/kontakt.html">Kontakt</a></li>
-                </ul>
-            </div>
-            <div class="burger" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </header>
-        <main>
-            <form action="https://formsubmit.co/post@listogas.no" method="POST">
+    <header id="header">
+        <img src="../image/logo/logo_white.png" alt="" class="logo">
+        <div class="company-name">Listog Entreprenør AS</div>
+        <div class="menu">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html">Om oss</a></li>
+                <li><a href="../index.html">Tjenester</a></li>
+                <li><a href="../index.html">Samarbeidspartnere</a></li>
+                <li><a href="../gallery/gallery.html">Våre prosjekter</a></li>
+                <li><a href="../side_kontakt/kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <form id="contact-form">
 
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_captcha" value="false">
 
-                <label for="name">Navn:</label>
-                <input type="text" id="name" name="name" required>
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" required>
 
-                <label for="email">E-post:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="phone">Telefonnummer:</label>
-                <input type="tel" id="phone" name="phone" required>
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-                <label for="service">Tjenestetype:</label>
+            <label for="service">Tjenestetype:</label>
 
-                <select id="service" name="service" required>
-                    <option value="">Velg en tjeneste</option>
-                    <option value="Malerarbeid">Malerarbeid</option>
-                    <option value="Flislegging">Flislegging</option>
-                    <option value="Gipsarbeid">Gipsarbeid</option>
-                    <option value="Vinduer og dører">Vinduer og dører</option>
-                    <option value="Fasade- og gulvarbeid">Fasade- og gulvarbeid</option>
-                    <option value="Montering av møbler">Montering av møbler</option>
-                    <option value="Design">Bygging av terrasser</option>
-                    <option value="Annet">Annet</option>
-                </select>
+            <select id="service" name="service" required>
+                <option value="">Velg en tjeneste</option>
+                <option value="Malerarbeid">Malerarbeid</option>
+                <option value="Flislegging">Flislegging</option>
+                <option value="Gipsarbeid">Gipsarbeid</option>
+                <option value="Vinduer og dører">Vinduer og dører</option>
+                <option value="Fasade- og gulvarbeid">Fasade- og gulvarbeid</option>
+                <option value="Montering av møbler">Montering av møbler</option>
+                <option value="Design">Bygging av terrasser</option>
+                <option value="Annet">Annet</option>
+            </select>
 
-                <label for="message">Melding:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Melding:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-                <button type="submit">Send</button>
-            </form>
-        </main>
+            <button type="submit">Send</button>
+        </form>
+    </main>
 
-        <footer>
-            <p>&copy; 2025 Listog Entreprenør AS. Alle rettigheter reservert.</p>
-        </footer>
+    <footer>
+        <p>&copy; 2025 Listog Entreprenør AS. Alle rettigheter reservert.</p>
+    </footer>
 
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+</body>
 
 </html>
