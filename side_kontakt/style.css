@@ -15,6 +15,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    position: relative;
 }
 
 header.shrink {
@@ -26,9 +27,6 @@ header.shrink {
     transition: all 0.3s ease;
 }
 
-header.shrink .logo {
-    height: 45px;
-}
 
 .company-name {
     color: white;
@@ -91,53 +89,59 @@ nav {
     .burger {
         display: flex;
     }
+
+    .menu {
+        margin-left: auto;
+    }
 }
 
-  main {
-      max-width: 600px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    form {
-      display: flex;
-      flex-direction: column;
-    }
+form {
+    display: flex;
+    flex-direction: column;
+}
 
-    label {
-      margin-top: 1rem;
-    }
+label {
+    margin-top: 1rem;
+}
 
-    input, select, textarea {
-      padding: 10px;
-      font-size: 1rem;
-      margin-top: 0.3rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
+input,
+select,
+textarea {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
 
-    button {
-      margin-top: 1.5rem;
-      padding: 10px;
-      background-color: #2e7d32;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
+button {
+    margin-top: 1.5rem;
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
-    button:hover {
-      background-color: #1b5e20;
-    }
+button:hover {
+    background-color: #1b5e20;
+}
 
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #222;
-      color: #fff;
-      margin-top: 2rem;
-    }
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+}

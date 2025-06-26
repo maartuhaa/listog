@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -14,6 +15,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    position: relative;
 }
 
 header.shrink {
@@ -23,10 +25,6 @@ header.shrink {
 .logo {
     height: 70px;
     transition: all 0.3s ease;
-}
-
-header.shrink .logo {
-    height: 45px;
 }
 
 .company-name {
@@ -90,12 +88,17 @@ nav {
     .burger {
         display: flex;
     }
+    
+    .menu {
+        margin-left: auto; 
+    }
 }
 
 h1 {
     text-align: center;
     padding: 20px;
 }
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -104,6 +107,7 @@ h1 {
     max-width: 1200px;
     margin: auto;
 }
+
 .gallery img {
     width: 100%;
     height: auto;
@@ -111,6 +115,7 @@ h1 {
     cursor: pointer;
     transition: transform 0.3s;
 }
+
 .gallery img:hover {
     transform: scale(1.05);
 }
@@ -130,19 +135,22 @@ h1 {
     pointer-events: none;
     transition: opacity 0.3s;
 }
+
 .lightbox img {
     max-width: 90%;
     max-height: 80%;
     border-radius: 10px;
 }
+
 .lightbox.show {
     opacity: 1;
     pointer-events: auto;
 }
+
 footer {
-      text-align: center;
-      padding: 1rem;
-      background: #222;
-      color: #fff;
-      margin-top: 2rem;
-    }
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+}

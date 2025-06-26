@@ -27,48 +27,6 @@ header.shrink {
     transition: all 0.3s ease;
 }
 
-
-.team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 40px 20px;
-  flex-wrap: wrap; 
-}
-
-.team-photo {
-  width: 100%;
- max-width: 600px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.om {
-  max-width: 600px;
-}
-
-
-@media (max-width: 768px) {
-  .team {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .team-photo {
-    max-width: 90%;
-  }
-
-  .om {
-    padding-top: 20px;
-  }
-}
-
-header.shrink .logo {
-    height: 45px;
-}
-
 .company-name {
     color: white;
     font-size: 1.5em;
@@ -116,12 +74,12 @@ nav {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%; 
+        top: 100%;
         right: 0;
         background: #333;
         padding: 10px;
         border-radius: 10px;
-        z-index: 999; 
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -133,7 +91,7 @@ nav {
     }
 
     .menu {
-        margin-left: auto; 
+        margin-left: auto;
     }
 }
 
@@ -144,6 +102,47 @@ section {
 .team {
     display: flex;
     flex-direction: row;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.team-photo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.om {
+    max-width: 600px;
+}
+
+
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-photo {
+        max-width: 90%;
+    }
+
+    .om {
+        padding-top: 20px;
+    }
+}
+
+header.shrink .logo {
+    height: 45px;
 }
 
 .om {
@@ -168,7 +167,7 @@ section {
     background: white;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service-item img {
@@ -183,7 +182,7 @@ section {
 
 .Samarbeidspartnere {
     display: flex;
-    
+
 }
 
 
@@ -252,7 +251,7 @@ footer {
     background-color: white;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-size: 1.1em;
     line-height: 1.5;
 }
@@ -268,16 +267,19 @@ footer {
     padding: 60px 20px;
     text-align: center;
 }
+
 .partners-section h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
 }
+
 .partners-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
+
 .partner-logo {
     max-width: 150px;
     background: white;
@@ -293,6 +295,7 @@ footer {
     object-fit: contain;
     border-radius: 0.5vw;
 }
+
 .partner-logo:hover {
     transform: translateY(-5px);
 }
