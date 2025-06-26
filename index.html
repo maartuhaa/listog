@@ -15,141 +15,142 @@
 
     <body>
 
-    <header id="header">
-        <img src="image/logo/logo_white.png" alt="logo" class="logo">
-        <div class="company-name">Listog Entreprenør AS</div>
-        <div class="menu">
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">Om oss</a></li>
-                <li><a href="#services">Tjenester</a></li>
-                <li><a href="#partners">Samarbeidspartnere</a></li>
-                <li><a href="../gallery/gallery.html">Våre prosjekter</a></li>
-                <li><a href="../side_kontakt/kontakt.html">Kontakt</a></li>
-            </ul>
-        </div>
-        <div class="burger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="team">
-            <img src="image/foto.png" alt="Vårt team" class="team-photo">
-            <div class="om">
-                <h2>Om oss</h2>
-                <p>
-                    Listog Entreprenør AS ble etablert i 2021 av Artem og Liuba – to gode venner med en felles visjon.
-                    Med
-                    mange års erfaring innen byggebransjen bestemte Artyom seg for å starte noe eget, og sammen skapte
-                    de et firma som setter kvalitet og pålitelighet i høysetet.
-                </p>
-
-                <p>
-                    Vårt firma består av et lite team med erfarne fagfolk som brenner for det de gjør. Vi jobber
-                    hovedsakelig i Oslo og nærliggende områder, og vi er alltid klare til å møte nye utfordringer –
-                    store som små.
-                </p>
-
-                <p>
-                    Hos Listog Entreprenør AS står god kommunikasjon, kvalitet i arbeidet og kundens tilfredshet i
-                    fokus. Vi bygger ikke bare med hendene, men også med hjertet.
-                </p>
-
+        <header id="header" class="fade-in">
+            <img src="image/logo/logo_white.png" alt="logo" class="logo">
+            <div class="company-name">Listog Entreprenør AS</div>
+            <div class="menu">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">Om oss</a></li>
+                    <li><a href="#services">Tjenester</a></li>
+                    <li><a href="#partners">Samarbeidspartnere</a></li>
+                    <li><a href="../gallery/gallery.html">Våre prosjekter</a></li>
+                    <li><a href="../side_kontakt/kontakt.html">Kontakt</a></li>
+                </ul>
             </div>
-
-        </div>
-
-    </section>
-
-    <section id="services">
-        <h2 class="hva">Vi fikser det for deg!</h2>
-        <div class="services-container">
-            <div class="service-item">
-                <h3>Malerarbeid</h3>
-                <img src="image/services/IMG_2256-scaled.jpg" alt="Malerarbeid" class="zoom">
-                <p>Profesjonell forberedelse, sparkling og maling av alle overflater.</p>
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="service-item">
-                <h3>Flislegging</h3>
-                <img src="image/services/flislagt-bad-bergen-1024x683.jpg" alt="Flislegging" class="zoom">
-                <p>Bad, kjøkken og utendørsprosjekter med kreative løsninger.</p>
+        </header>
+
+        <section id="about" class="about-section fade-in delay-1">
+            <div class="about-container">
+                <div class="about-illustration"></div>
+
+                <div class="om">
+                    <h2>Om oss</h2>
+                    <p>
+                        Listog Entreprenør AS ble etablert i 2021 av Artem og Liuba – to gode venner med en felles
+                        visjon.
+                        Med mange års erfaring innen byggebransjen bestemte Artyom seg for å starte noe eget, og sammen
+                        skapte
+                        de et firma som setter kvalitet og pålitelighet i høysetet.
+                    </p>
+
+                    <p>
+                        Vårt firma består av et lite team med erfarne fagfolk som brenner for det de gjør. Vi jobber
+                        hovedsakelig i Oslo og nærliggende områder, og vi er alltid klare til å møte nye utfordringer –
+                        store som små.
+                    </p>
+
+                    <p>
+                        Hos Listog Entreprenør AS står god kommunikasjon, kvalitet i arbeidet og kundens tilfredshet i
+                        fokus.
+                        Vi bygger ikke bare med hendene, men også med hjertet.
+                    </p>
+                </div>
             </div>
-            <div class="service-item">
-                <h3>Gipsarbeid</h3>
-                <img src="image/services/61_1018-cm-lange-kniven-brukes-feste-leire.jpg" alt="Gipsarbeid" class="zoom">
-                <p>Montering av vegger og tak med høy kvalitet.</p>
-            </div>
-            <div class="service-item">
-                <h3>Vinduer og dører</h3>
-                <img src="image/services/natre_kox-138.avif" alt="Vinduer og dører" class="zoom">
-                <p>Presis montering av vinduer og dører i alle formater.</p>
-            </div>
-            <div class="service-item">
-                <h3>Fasade- og gulvarbeid</h3>
-                <img src="image/services/images.jpg" alt="Fasade- og gulvarbeid" class="zoom">
-                <p>Legging av parkett, laminat og andre gulvtyper.</p>
-            </div>
-            <div class="service-item">
-                <h3>Montering av møbler</h3>
-                <img src="image/services/download (4).jpg" alt="Montering av møbler" class="zoom">
-                <p>Montering av kjøkken, garderober og mer.</p>
-            </div>
-            <div class="service-item">
-                <h3>Bygging av terrasser</h3>
-                <img src="image/services/WhatsApp Image 2025-04-26 at 17.15.34.jpeg" alt="Bygging av terrasser"
-                    class="zoom">
-                <p>Vi bygger solide og stilige terrasser som passer perfekt til ditt uteområde.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section id="why-us">
-        <h2 class="hvorfor">Hvorfor velge oss?</h2>
-        <div class="reasons-container">
-            <div class="reason-item"><span>⭐</span> Rask respons og fleksibilitet.</div>
-            <div class="reason-item"><span>⭐</span> Konkurransedyktige priser uten kompromiss på kvalitet.</div>
-            <div class="reason-item"><span>⭐</span> Garanti på alle typer arbeid.</div>
-            <div class="reason-item"><span>⭐</span> Over 50 vellykkede prosjekter over hele Norge.</div>
-            <div class="reason-item"><span>⭐</span> Erfarne fagfolk innen maling, flislegging, gips, fasader og mer.
+        <section id="services" class="fade-in delay-2">
+            <h2 class="hva">Vi fikser det for deg!</h2>
+            <div class="services-container">
+                <div class="service-item">
+                    <h3>Malerarbeid</h3>
+                    <img src="image/services/IMG_2256-scaled.jpg" alt="Malerarbeid" class="zoom">
+                    <p>Profesjonell forberedelse, sparkling og maling av alle overflater.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Flislegging</h3>
+                    <img src="image/services/flislagt-bad-bergen-1024x683.jpg" alt="Flislegging" class="zoom">
+                    <p>Bad, kjøkken og utendørsprosjekter med kreative løsninger.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Gipsarbeid</h3>
+                    <img src="image/services/61_1018-cm-lange-kniven-brukes-feste-leire.jpg" alt="Gipsarbeid"
+                        class="zoom">
+                    <p>Montering av vegger og tak med høy kvalitet.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Vinduer og dører</h3>
+                    <img src="image/services/natre_kox-138.avif" alt="Vinduer og dører" class="zoom">
+                    <p>Presis montering av vinduer og dører i alle formater.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Fasade- og gulvarbeid</h3>
+                    <img src="image/services/images.jpg" alt="Fasade- og gulvarbeid" class="zoom">
+                    <p>Legging av parkett, laminat og andre gulvtyper.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Montering av møbler</h3>
+                    <img src="image/services/download (4).jpg" alt="Montering av møbler" class="zoom">
+                    <p>Montering av kjøkken, garderober og mer.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Bygging av terrasser</h3>
+                    <img src="image/services/WhatsApp Image 2025-04-26 at 17.15.34.jpeg" alt="Bygging av terrasser"
+                        class="zoom">
+                    <p>Vi bygger solide og stilige terrasser som passer perfekt til ditt uteområde.</p>
+                </div>
             </div>
-            <div class="reason-item"><span>⭐</span> Tilgjengelig når du trenger dem, for å sikre effektivitet og
-                kvalitet.</div>
-            <div class="reason-item"><span>⭐</span> Reduserer tidsbruk og kostnader, uten å kompromisse på resultatet.
+        </section>
+
+
+        <section id="why-us" class="fade-in delay-3">
+            <h2 class="hvorfor">Hvorfor velge oss?</h2>
+            <div class="reasons-container">
+                <div class="reason-item"><span>⭐</span> Rask respons og fleksibilitet.</div>
+                <div class="reason-item"><span>⭐</span> Konkurransedyktige priser uten kompromiss på kvalitet.</div>
+                <div class="reason-item"><span>⭐</span> Garanti på alle typer arbeid.</div>
+                <div class="reason-item"><span>⭐</span> Over 50 vellykkede prosjekter over hele Norge.</div>
+                <div class="reason-item"><span>⭐</span> Erfarne fagfolk innen maling, flislegging, gips, fasader og mer.
+                </div>
+                <div class="reason-item"><span>⭐</span> Tilgjengelig når du trenger dem, for å sikre effektivitet og
+                    kvalitet.</div>
+                <div class="reason-item"><span>⭐</span> Reduserer tidsbruk og kostnader, uten å kompromisse på
+                    resultatet.
+                </div>
+                <div class="reason-item"><span>⭐</span> Vi kan bidra til å styrke ditt team og sikre at prosjektene dine
+                    blir ferdigstilt til avtalt tid og kvalitet!</div>
             </div>
-            <div class="reason-item"><span>⭐</span> Vi kan bidra til å styrke ditt team og sikre at prosjektene dine
-                blir ferdigstilt til avtalt tid og kvalitet!</div>
-        </div>
-    </section>
+        </section>
 
-    <section id="partners" class="partners-section">
-        <h2>Våre samarbeidspartnere</h2>
-        <div class="partners-logos">
-            <a href="https://montera.no" target="_blank" class="partner-logo">
-                <img src="image/partners/Screenshot 2025-04-14 132804 copy.png" alt="Montera AS">
-            </a>
-            <a href="https://handverkeriet.no" target="_blank" class="partner-logo">
-                <img src="image/partners/Screenshot 2025-04-14 132842 copy.png" alt="Håndverkeriet AS">
-            </a>
-            <a href="https://eie.no/eiendomsmegler/eie-frogner" target="_blank" class="partner-logo">
-                <img src="image/partners/Screenshot 2025-04-14 133041 copy.png" alt="EIE Frogner & Aker Brygge">
-            </a>
-        </div>
-        <p style="margin-top: 40px; font-size: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-            ... og mange flere. Våre gode relasjoner og gjennomførte prosjekter viser vår pålitelighet og kompetanse.
-        </p>
-    </section>
+        <section id="partners" class="partners-section fade-in">
+            <h2>Våre samarbeidspartnere</h2>
+            <div class="partners-logos">
+                <a href="https://montera.no" target="_blank" class="partner-logo">
+                    <img src="image/partners/Screenshot 2025-04-14 132804 copy.png" alt="Montera AS">
+                </a>
+                <a href="https://handverkeriet.no" target="_blank" class="partner-logo">
+                    <img src="image/partners/Screenshot 2025-04-14 132842 copy.png" alt="Håndverkeriet AS">
+                </a>
+                <a href="https://eie.no/eiendomsmegler/eie-frogner" target="_blank" class="partner-logo">
+                    <img src="image/partners/Screenshot 2025-04-14 133041 copy.png" alt="EIE Frogner & Aker Brygge">
+                </a>
+            </div>
+            <p style="margin-top: 40px; font-size: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                ... og mange flere. Våre gode relasjoner og gjennomførte prosjekter viser vår pålitelighet og
+                kompetanse.
+            </p>
+        </section>
 
+        <footer>
+            <p>&copy; 2025 Listog Entreprenør AS. Alle rettigheter reservert.</p>
+        </footer>
 
-
-
-    <footer>
-        <p>&copy; 2025 Listog Entreprenør AS. Alle rettigheter reservert.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 
 </html>

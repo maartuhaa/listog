@@ -11,9 +11,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-}
 
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = lightbox.querySelector('img');
@@ -28,4 +25,24 @@ document.querySelectorAll('.gallery img').forEach(img => {
 
 lightbox.addEventListener('click', () => {
     lightbox.classList.remove('show');
+});
+
+// Анімація зображень при скролі
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-on-scroll');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    // Анімувати всі зображення з галереї
+    document.querySelectorAll('.gallery img').forEach((img, i) => {
+        img.classList.add(`delay-${(i % 10) + 1}`);
+        observer.observe(img);
+    });
 });
