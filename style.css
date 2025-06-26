@@ -15,7 +15,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header.shrink {
@@ -27,7 +28,91 @@ header.shrink {
     transition: all 0.3s ease;
 }
 
+header.shrink .logo {
+    height: 45px;
+}
 
+.company-name {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #333;
+        padding: 10px;
+        border-radius: 10px;
+        z-index: 999;
+        min-width: 180px;
+        gap: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li a {
+        color: white;
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .menu {
+        margin-left: auto;
+    }
+}
+
+
+section {
+    padding: 20px 20px;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+}
 .team {
   display: flex;
   justify-content: center;
@@ -64,88 +149,6 @@ header.shrink {
     padding-top: 20px;
   }
 }
-
-header.shrink .logo {
-    height: 45px;
-}
-
-.company-name {
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-}
-
-.menu {
-    display: flex;
-    margin-left: 30vw;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%; 
-        right: 0;
-        background: #333;
-        padding: 10px;
-        border-radius: 10px;
-        z-index: 999; 
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .menu {
-        margin-left: auto; 
-    }
-}
-
-section {
-    padding: 20px 20px;
-}
-
-.team {
-    display: flex;
-    flex-direction: row;
-}
-
 .om {
     margin-left: 3.5vw;
 }

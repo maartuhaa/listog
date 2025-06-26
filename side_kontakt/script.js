@@ -1,6 +1,6 @@
 
 function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
+    document.getElementById("menu").classList.toggle("active");
 }
 
 const header = document.getElementById('header');
@@ -12,6 +12,5 @@ window.addEventListener('scroll', () => {
     }
 });
 
-function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-}
+
+
