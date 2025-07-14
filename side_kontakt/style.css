@@ -22,11 +22,14 @@ header.shrink {
     padding: 5px 20px;
 }
 
+header.shrink .logo {
+    height: 45px;
+}
+
 .logo {
     height: 70px;
     transition: all 0.3s ease;
 }
-
 
 .company-name {
     color: white;
@@ -37,7 +40,7 @@ header.shrink {
 
 .menu {
     display: flex;
-    margin-left: 30vw;
+    margin-left: auto;
 }
 
 nav {
@@ -69,6 +72,7 @@ nav {
     background-color: white;
     margin: 5px;
 }
+
 
 @media (max-width: 768px) {
     .nav-links {
