@@ -2,22 +2,25 @@
    BURGER MENU
 ===================== */
 function toggleMenu() {
-    const navLinks = document.getElementById("nav-links");
-    navLinks.classList.toggle("active");
+    const menu = document.querySelector(".menu");
+    if (!menu) return;
+    menu.classList.toggle("active");
 }
 
-/* Close menu on outside click */
+/* =====================
+   CLOSE MENU ON OUTSIDE CLICK
+===================== */
 document.addEventListener("click", (event) => {
-    const navLinks = document.getElementById("nav-links");
+    const menu = document.querySelector(".menu");
     const burger = document.querySelector(".burger");
 
-    if (!navLinks || !burger) return;
+    if (!menu || !burger) return;
 
-    const insideMenu = navLinks.contains(event.target);
-    const insideBurger = burger.contains(event.target);
+    const clickInsideMenu = menu.contains(event.target);
+    const clickOnBurger = burger.contains(event.target);
 
-    if (!insideMenu && !insideBurger) {
-        navLinks.classList.remove("active");
+    if (!clickInsideMenu && !clickOnBurger) {
+        menu.classList.remove("active");
     }
 });
 
@@ -28,16 +31,11 @@ const header = document.getElementById("header");
 
 window.addEventListener("scroll", () => {
     if (!header) return;
-
-    if (window.scrollY > 50) {
-        header.classList.add("shrink");
-    } else {
-        header.classList.remove("shrink");
-    }
+    header.classList.toggle("shrink", window.scrollY > 50);
 });
 
 /* =====================
-   SMOOTH SCROLL (anchors)
+   SMOOTH SCROLL (ANCHORS)
 ===================== */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function (e) {
@@ -50,6 +48,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
             block: "start"
         });
 
-        document.getElementById("nav-links")?.classList.remove("active");
+        // close mobile menu after click
+        document.querySelector(".menu")?.classList.remove("active");
     });
 });

@@ -19,17 +19,21 @@ header.shrink {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Brand */
+/* =====================
+   BRAND
+===================== */
 .brand {
     display: flex;
     align-items: center;
     gap: 12px;
     text-decoration: none;
+    min-width: 0;
 }
 
 .logo {
     height: 60px;
     transition: height 0.3s ease;
+    flex-shrink: 0;
 }
 
 header.shrink .logo {
@@ -41,9 +45,12 @@ header.shrink .logo {
     font-size: 1.4em;
     font-weight: bold;
     white-space: nowrap;
+    transition: font-size 0.3s ease;
 }
 
-/* Navigation */
+/* =====================
+   NAVIGATION (DESKTOP)
+===================== */
 .menu {
     display: flex;
 }
@@ -61,10 +68,9 @@ header.shrink .logo {
     text-decoration: none;
     font-size: 1em;
     position: relative;
-    transition: color 0.3s ease;
 }
 
-/* underline animation */
+/* underline hover */
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -80,7 +86,9 @@ header.shrink .logo {
     width: 100%;
 }
 
-/* Burger */
+/* =====================
+   BURGER
+===================== */
 .burger {
     display: none;
     flex-direction: column;
@@ -96,7 +104,7 @@ header.shrink .logo {
 }
 
 /* =====================
-   FOOTER (GLOBAL)
+   FOOTER
 ===================== */
 footer {
     text-align: center;
@@ -133,34 +141,103 @@ footer {
 .icon.tiktok:hover { fill: #000; }
 
 /* =====================
-   RESPONSIVE (HEADER)
+   MOBILE (≤768px)
 ===================== */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 20px;
-        background: #333;
-        padding: 15px;
-        border-radius: 10px;
-        animation: fadeDown 0.3s ease forwards;
+
+    header {
+        padding: 10px 14px;
+        border-radius: 0 0 16px 16px;
     }
 
-    .nav-links.active {
-        display: flex;
+    .logo {
+        height: 38px;
+    }
+
+    .company-name {
+        font-size: 1.05em;
+        max-width: 65vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .burger {
         display: flex;
+        align-items: center;
+    }
+
+    .burger div {
+        width: 22px;
+        height: 2.5px;
+        margin: 4px 0;
+    }
+
+    /* dropdown menu */
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #333;
+        padding: 16px 0;
+        border-radius: 0 0 16px 16px;
+        display: none;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    }
+
+    .menu.active {
+        display: block;
+        animation: fadeDown 0.25s ease;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 1.15em;
     }
 }
 
+/* =====================
+   ULTRA MOBILE (≤360px)
+   “Listog Entreprenør AS” → “Listog AS”
+===================== */
+@media (max-width: 360px) {
+
+    .company-name {
+        font-size: 0; /* hide original text */
+        position: relative;
+    }
+
+    .company-name::after {
+        content: "Listog AS";
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .burger div {
+        width: 20px;
+        height: 2px;
+        margin: 3px 0;
+    }
+}
+
+/* =====================
+   ANIMATION
+===================== */
 @keyframes fadeDown {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
     to {
         opacity: 1;
