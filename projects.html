@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Våre prosjekter | Listog Entreprenør AS</title>
+    <meta name="description"
+        content="Se utvalgte prosjekter utført av Listog Entreprenør AS. Kvalitetsarbeid innen oppussing, maling, flislegging og bygg i Oslo og omegn.">
+
+    <link rel="icon" href="assets/image/logo/favicon.png" type="image/png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER (той самий, що на index.html) ===== -->
+    <header id="header">
+        <a href="index.html" class="brand">
+            <img src="assets/image/logo/logo_white.png" alt="Listog Entreprenør AS logo" class="logo">
+            <span class="company-name">Listog Entreprenør AS</span>
+        </a>
+
+        <nav class="menu">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#about">Om oss</a></li>
+                <li><a href="index.html#services">Tjenester</a></li>
+                <li><a href="index.html#partners">Samarbeidspartnere</a></li>
+                <li><a href="projects.html">Våre prosjekter</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE TITLE ===== -->
+    <h1>Våre prosjekter</h1>
+
+    <!-- ===== GALLERY ===== -->
+    <div class="gallery">
+        <div class="gallery-item"> <img src="assets/image/work/image1.jpeg" alt="Prosjekt 1"></div>
+        <div class="gallery-item"><img src="assets/image/work/image2.jpeg" alt="Prosjekt 2"></div>
+        <div class="gallery-item">
+            <video src="assets/image/work/video1.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="gallery-item"><img src="assets/image/work/image3.jpeg" alt="Prosjekt 3"></div>
+        <div class="gallery-item"><img src="assets/image/work/image4.jpeg" alt="Prosjekt 4"></div>
+        <div class="gallery-item"><img src="assets/image/work/image5.jpeg" alt="Prosjekt 5"></div>
+        <div class="gallery-item"> <img src="assets/image/work/image6.png" alt="projects 6"></div>
+        <div class="gallery-item">
+            <video src="assets/image/work/video2.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="gallery-item"><img src="assets/image/work/image7.jpeg" alt="Prosjekt 7"></div>
+        <div class="gallery-item"> <img src="assets/image/work/image8.jpeg" alt="Prosjekt 8"></div>
+        <div class="gallery-item"><img src="assets/image/work/image9.jpeg" alt="Prosjekt 9"></div>
+        <div class="gallery-item"><img src="assets/image/work/image10.jpeg" alt="Prosjekt 9"></div>
+    </div>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox">
+        <button class="close">&times;</button>
+        <button class="prev">&#10094;</button>
+        <img src="" alt="">
+        <button class="next">&#10095;</button>
+    </div>
+
+    <!-- ===== FOOTER (той самий, що на index.html) ===== -->
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com/listogas.no" target="_blank" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" class="icon instagram">
+                    <path
+                        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3zm0 7.7A3 3 0 1 1 15 12a3 3 0 0 1-3 3zm4.9-7.9a1.1 1.1 0 1 1 1.1-1.1 1.1 1.1 0 0 1-1.1 1.1z" />
+                </svg>
+            </a>
+
+            <a href="https://www.facebook.com/share/1BKbS1Exy9" target="_blank" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" class="icon facebook">
+                    <path
+                        d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4V12H16l-.4 3h-2.1v7A10 10 0 0 0 22 12z" />
+                </svg>
+            </a>
+
+            <a href="https://www.tiktok.com/@listogas.no" target="_blank" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" class="icon tiktok">
+                    <path
+                        d="M21 8.5a6.5 6.5 0 0 1-4-1.3v6.8a5.5 5.5 0 1 1-5.5-5.5c.3 0 .7 0 1 .1v3a2.5 2.5 0 1 0 2.5 2.5V2h3a6.5 6.5 0 0 0 3 6.5z" />
+                </svg>
+            </a>
+        </div>
+
+        <p>&copy; 2025 Listog Entreprenør AS. Alle rettigheter reservert.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/base.js"></script>
+    <script src="assets/js/projects.js"></script>
+</body>
+
+</html>

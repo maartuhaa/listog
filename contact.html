@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt oss | Listog Entreprenør AS</title>
+    <meta name="description"
+        content="Kontakt Listog Entreprenør AS for gratis befaring og tilbud. Vi hjelper deg med bygg, oppussing og håndverkertjenester i Oslo og omegn.">
+
+
+    <link rel="icon" href="assets/image/logo/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="index.html" class="brand">
+            <img src="assets/image/logo/logo_white.png" alt="Listog Entreprenør AS logo" class="logo">
+            <span class="company-name">Listog Entreprenør AS</span>
+        </a>
+
+        <nav class="menu">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#about">Om oss</a></li>
+                <li><a href="index.html#services">Tjenester</a></li>
+                <li><a href="index.html#partners">Samarbeidspartnere</a></li>
+                <li><a href="projects.html">Våre prosjekter</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <main>
+        <form action="https://formsubmit.co/post@listogas.no" method="POST">
+            <!-- FormSubmit settings -->
+            <input type="hidden" name="_subject" value="Ny henvendelse fra listogas.no">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://listogas.no/index.html">
+
+            <label for="name">Navn</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="service">Tjenestetype</label>
+            <select id="service" name="service" required>
+                <option value="">Velg en tjeneste</option>
+                <option>Malerarbeid</option>
+                <option>Flislegging</option>
+                <option>Gipsarbeid</option>
+                <option>Vinduer og dører</option>
+                <option>Fasade- og gulvarbeid</option>
+                <option>Montering av møbler</option>
+                <option>Bygging av terrasser</option>
+                <option>Annet</option>
+            </select>
+
+            <label for="message">Melding</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+    </main>
+       <footer>
+            <p>&copy; 2025 Listog Entreprenør AS. Alle rettigheter reservert.</p>
+        </footer>
+        <!-- SUCCESS POPUP -->
+        <div class="popup-overlay" id="success-popup">
+            <div class="popup-box">
+                <h2>✅ Meldingen er sendt!</h2>
+                <p>Takk for at du tok kontakt. Vi svarer deg så snart som mulig.</p>
+
+                <a href="index.html" class="popup-btn">Tilbake til forsiden</a>
+            </div>
+        </div>
+
+    <script src="assets/js/base.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+
+</html>
