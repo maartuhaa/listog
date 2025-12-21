@@ -24,6 +24,7 @@ h1 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: block;
 }
 
 .gallery-item {
@@ -31,6 +32,8 @@ h1 {
     margin-bottom: 16px;
     border-radius: 12px;
     overflow: hidden;
+    display: inline-block;
+    width: 100%;
 }
 
 /* Images */
