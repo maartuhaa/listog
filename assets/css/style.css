@@ -210,6 +210,25 @@ section {
     object-fit: contain;
 }
 
+/* FIX spacing ONLY for partners block */
+#partners {
+    padding-bottom: 20px;
+}
+
+.partners-text {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FIX next section spacing */
+#certifications {
+    padding-top: 20px;
+}
+
 /* =====================
    RESPONSIVE (PAGE)
 ===================== */
