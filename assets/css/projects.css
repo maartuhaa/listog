@@ -16,6 +16,45 @@ h1 {
 }
 
 /* =====================
+   PROJECT FILTERS
+===================== */
+
+.project-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto 35px;
+    padding: 0 20px;
+}
+
+.filter-btn {
+    border: 1px solid #d0d0d0;
+    background: white;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+    background: #222;
+    color: white;
+    border-color: #222;
+}
+
+.filter-btn.active {
+    background: #222;
+    color: white;
+    border-color: #222;
+}
+
+/* =====================
    GALLERY (MASONRY)
 ===================== */
 .gallery {

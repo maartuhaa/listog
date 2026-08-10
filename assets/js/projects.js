@@ -151,3 +151,75 @@ if (title) {
         title.classList.add("show");
     }, 100);
 }
+
+/* =====================
+   PROJECT FILTERS
+===================== */
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+function filterProjects(category) {
+
+    galleryItems.forEach(item => {
+
+        const categories = item.dataset.category
+            ? item.dataset.category.split(" ")
+            : [];
+
+        const shouldShow =
+            category === "all" ||
+            categories.includes(category);
+
+        if (shouldShow) {
+            item.style.display = "inline-block";
+
+            setTimeout(() => {
+                item.classList.add("show");
+            }, 20);
+
+        } else {
+            item.classList.remove("show");
+
+            setTimeout(() => {
+                item.style.display = "none";
+            }, 300);
+        }
+    });
+}
+
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const category = button.dataset.filter;
+
+        filterButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        filterProjects(category);
+    });
+
+});
+
+/* =====================
+   CATEGORY FROM URL
+===================== */
+
+const urlParams = new URLSearchParams(window.location.search);
+const categoryFromUrl = urlParams.get("category");
+
+if (categoryFromUrl) {
+
+    const button = document.querySelector(
+        `.filter-btn[data-filter="${categoryFromUrl}"]`
+    );
+
+    if (button) {
+        button.click();
+    }
+}

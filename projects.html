@@ -45,24 +45,39 @@
     <!-- ===== PAGE TITLE ===== -->
     <h1>Våre prosjekter</h1>
 
+    <!-- ===== FILTERS ===== -->
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Alle</button>
+        <button class="filter-btn" data-filter="bathroom">Bad</button>
+        <button class="filter-btn" data-filter="kitchen">Kjøkken</button>
+        <button class="filter-btn" data-filter="interior">Innvendig oppussing</button>
+        <button class="filter-btn" data-filter="windows">Vinduer og dører</button>
+        <button class="filter-btn" data-filter="outdoor">Utendørsprosjekter</button>
+        <button class="filter-btn" data-filter="sauna">Badstuer</button>
+    </div>
+
+    <!-- ===== GALLERY ===== -->
+
     <!-- ===== GALLERY ===== -->
     <div class="gallery">
-        <div class="gallery-item"> <img src="assets/image/work/image1.jpeg" alt="Prosjekt 1"></div>
-        <div class="gallery-item"><img src="assets/image/work/image2.jpeg" alt="Prosjekt 2"></div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="bathroom"><img src="assets/image/work/image1.jpeg" alt="Prosjekt 1">
+        </div>
+        <div class="gallery-item" data-category="outdoor"><img src="assets/image/work/image2.jpeg" alt="Prosjekt 2"></div>
+        <div class="gallery-item" data-category="outdoor">
             <video src="assets/image/work/video1.mp4" autoplay muted loop playsinline></video>
         </div>
-        <div class="gallery-item"><img src="assets/image/work/image3.jpeg" alt="Prosjekt 3"></div>
-        <div class="gallery-item"><img src="assets/image/work/image4.jpeg" alt="Prosjekt 4"></div>
-        <div class="gallery-item"><img src="assets/image/work/image5.jpeg" alt="Prosjekt 5"></div>
-        <div class="gallery-item"> <img src="assets/image/work/image6.png" alt="projects 6"></div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="kitchen"><img src="assets/image/work/image3.jpeg" alt="Prosjekt 3"></div>
+        <div class="gallery-item" data-category="kitchen"><img src="assets/image/work/image4.jpeg" alt="Prosjekt 4"></div>
+        <div class="gallery-item" data-category="kitchen"><img src="assets/image/work/image5.jpeg" alt="Prosjekt 5"></div>
+        <div class="gallery-item" data-category="sauna"><img src="assets/image/work/image6.png" alt="projects 6"></div>
+        <div class="gallery-item" data-category="outdoor">
             <video src="assets/image/work/video2.mp4" autoplay muted loop playsinline></video>
         </div>
-        <div class="gallery-item"><img src="assets/image/work/image7.jpeg" alt="Prosjekt 7"></div>
-        <div class="gallery-item"> <img src="assets/image/work/image8.jpeg" alt="Prosjekt 8"></div>
-        <div class="gallery-item"><img src="assets/image/work/image9.jpeg" alt="Prosjekt 9"></div>
-        <div class="gallery-item"><img src="assets/image/work/image10.jpeg" alt="Prosjekt 9"></div>
+        <div class="gallery-item" data-category="outdoor"><img src="assets/image/work/image7.jpeg" alt="Prosjekt 7"></div>
+        <div class="gallery-item" data-category="outdoor"><img src="assets/image/work/image8.jpeg" alt="Prosjekt 8"></div>
+        <div class="gallery-item" data-category="outdoor"><img src="assets/image/work/image9.jpeg" alt="Prosjekt 9"></div>
+        <div class="gallery-item" data-category="outdoor"><img src="assets/image/work/image10.jpeg" alt="Prosjekt 9">
+        </div>
     </div>
 
     <!-- ===== LIGHTBOX ===== -->
