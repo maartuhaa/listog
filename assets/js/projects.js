@@ -172,7 +172,7 @@ function filterProjects(category) {
             categories.includes(category);
 
         if (shouldShow) {
-            item.style.display = "inline-block";
+            item.style.display = "block";
 
             setTimeout(() => {
                 item.classList.add("show");
