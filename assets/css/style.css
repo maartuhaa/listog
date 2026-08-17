@@ -289,3 +289,88 @@ section {
         max-width: 90%;
     }
 }
+
+/* =====================
+   EXTRA ANIMATIONS
+===================== */
+
+/* SERVICES */
+
+.service-item {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.14);
+}
+
+.service-item img {
+    transition: transform 0.4s ease;
+}
+
+.service-item:hover img {
+    transform: scale(1.04);
+}
+
+
+/* WHY US */
+
+.reason-item {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.reason-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ABOUT */
+
+.about-illustration {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.about-illustration:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+.om {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.om:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+
+/* PARTNERS */
+
+.partner-logo {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.partner-logo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* SMOOTH SCROLL */
+
+html {
+    scroll-behavior: smooth;
+}

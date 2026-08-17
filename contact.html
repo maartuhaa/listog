@@ -28,7 +28,7 @@
                 <li><a href="index.html#services">Tjenester</a></li>
                 <li><a href="index.html#partners">Samarbeidspartnere</a></li>
                 <li><a href="projects.html">Våre prosjekter</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="contact.html">Kontakt oss</a></li>
             </ul>
         </nav>
 
@@ -40,40 +40,62 @@
     </header>
 
     <main>
-        <form action="https://formsubmit.co/post@listogas.no" method="POST">
-            <!-- FormSubmit settings -->
+        <form action="https://formsubmit.co/post@listogas.no" method="POST" class="contact-form">
+
             <input type="hidden" name="_subject" value="Ny henvendelse fra listogas.no">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://listogas.no/index.html">
 
-            <label for="name">Navn</label>
-            <input type="text" id="name" name="name" required>
+            <div class="form-row">
 
-            <label for="email">E-post</label>
-            <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="name">Navn</label>
+                    <input type="text" id="name" name="name" placeholder="Ditt navn" required>
+                </div>
 
-            <label for="phone">Telefonnummer</label>
-            <input type="tel" id="phone" name="phone" required>
+                <div class="form-group">
+                    <label for="phone">Telefonnummer</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer" required>
+                </div>
 
-            <label for="service">Tjenestetype</label>
-            <select id="service" name="service" required>
-                <option value="">Velg en tjeneste</option>
-                <option>Baderomsrenovering</option>
-                <option>Kjøkkenrenovering</option>
-                <option>Innvendig oppussing</option>
-                <option>Vinduer og dører</option>
-                <option>Utendørsprosjekter</option>
-                <option>Badstuer</option>
-                <option>Annet</option>
-            </select>
+            </div>
 
-            <label for="message">Melding</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <div class="form-row">
 
-            <button type="submit">Send</button>
+                <div class="form-group">
+                    <label for="email">E-post</label>
+                    <input type="email" id="email" name="email" placeholder="din@email.no" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Tjenestetype</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Velg en tjeneste</option>
+                        <option>Baderomsrenovering</option>
+                        <option>Kjøkkenrenovering</option>
+                        <option>Innvendig oppussing</option>
+                        <option>Vinduer og dører</option>
+                        <option>Utendørsprosjekter</option>
+                        <option>Badstuer</option>
+                        <option>Annet</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Melding</label>
+                <textarea id="message" name="message" rows="6" placeholder="Fortell oss litt om prosjektet ditt..."
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="contact-submit">
+                Send forespørsel
+                <span>→</span>
+            </button>
+
         </form>
-
     </main>
     <footer>
         <p>&copy; 2025 Listog Entreprenør AS. Alle rettigheter reservert.</p>
